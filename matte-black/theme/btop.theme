@@ -1,5 +1,8 @@
-#Bashtop theme with neo palette
-#by noiseRandom <email>
+# ────────────────────────────────────────────────────────────
+# Bashtop theme with Matte Black palette
+# by noiseRandom
+# https://github.com/tahayvr
+# ────────────────────────────────────────────────────────────
 
 # Colors should be in 6 or 2 character hexadecimal or single spaced rgb decimal: "#RRGGBB", "#BW" or "0-255 0-255 0-255"
 # example for white: "#ffffff", "#ff" or "255 255 255".
