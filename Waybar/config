@@ -1,0 +1,155 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "spacing": 0,
+  "modules-left": [
+    "hyprland/workspaces",
+    "custom/lock",
+    "custom/reboot",
+    "custom/power"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "network",
+    "battery",
+    "pulseaudio",
+    "custom/temperature",
+    "memory",
+    "cpu",
+    "clock"
+  ],
+  "hyprland/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "format": "{icon}",
+    "on-click": "activate",
+    "persistent-workspaces": {
+      "*": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "format-icons": {
+      "1": "<span>  </span>",
+      "2": "<span> 󰅩 </span>",
+      "3": "<span>  </span>",
+      "4": "<span>  </span>",
+      "5": "<span> 󰉋 </span>",
+      "6": "<span>  </span>",
+      "7": "<span>  </span>",
+      "8": "<span>  </span>",
+      "default": "<span>  </span>"
+    }
+  },
+  "custom/lock": {
+    "format": "<span>  </span> ",
+    "on-click": "hyprlock",
+    "tooltip": true,
+    "tooltip-format": "Lock:  + Esc"
+  },
+  "custom/reboot": {
+    "format": "<span>  </span> ",
+    "on-click": "systemctl reboot",
+    "tooltip": true,
+    "tooltip-format": "Reboot: Ctrl +  + Esc"
+  },
+  "custom/power": {
+    "format": "<span>  </span> ",
+    "on-click": "systemctl poweroff",
+    "tooltip": true,
+    "tooltip-format": "Shutdown: Ctrl + Shift +  + Esc"
+  },
+  "network": {
+    "format-wifi": "<span color='#8a8a8d'> 󰤨 </span>  {essid} ",
+    "format-ethernet": "<span color='#8a8a8d'> </span>  wired ",
+    "tooltip-format": "<span color='#c4a000'> 󰕒 </span>  {bandwidthUpBytes}  <span color='#00bb4b'> 󰇚 </span>  {bandwidthDownBytes}",
+    "format-linked": "<span color='#8a8a8d'> 󱘖 </span>  {ifname} (No IP) ",
+    "format-disconnected": "<span color='#b91c1c'>  </span>  disconnected ",
+    "format-alt": "<span color='#00bb4b'> 󰤨 </span>  {signalStrength}% ",
+    "interval": 1
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "<span color='#8a8a8d'> {icon} </span>  {capacity}% ",
+    "format-charging": " 󱐋{capacity}%",
+    "interval": 1,
+    "format-icons": [
+      "󰂎",
+      "󰁼",
+      "󰁿",
+      "󰂁",
+      "󰁹"
+    ],
+    "tooltip": true
+  },
+  "pulseaudio": {
+    "format": "<span color='#8a8a8d'>{icon}</span>  {volume}% ",
+    "format-muted": "<span color='#b91c1c'> 󰖁 </span>  0% ",
+    "format-icons": {
+      "headphone": "<span color='#8a8a8d'>  </span>",
+      "hands-free": "<span color='#8a8a8d'>  </span>",
+      "headset": "<span color='#8a8a8d'>  </span>",
+      "phone": "<span color='#8a8a8d'>  </span>",
+      "portable": "<span color='#8a8a8d'>  </span>",
+      "car": "<span color='#8a8a8d'>  </span>",
+      "default": [
+        "<span color='#8a8a8d'>  </span>",
+        "<span color='#8a8a8d'>  </span>",
+        "<span color='#8a8a8d'>  </span>"
+      ]
+    },
+    "on-click-right": "pavucontrol -t 3",
+    "on-click": "pactl -- set-sink-mute 0 toggle",
+    "tooltip": true,
+    "tooltip-format": "system volume: {volume}%"
+  },
+  "custom/temperature": {
+    "exec": "sensors | awk '/^Package id 0:/ {print int($4)}'",
+    "format": "<span color='#8a8a8d'> </span>  {}°C ",
+    "interval": 5,
+    "tooltip": true,
+    "tooltip-format": "CPU temperature: {}°C"
+  },
+  "memory": {
+    "format": "<span color='#8a8a8d'>  </span>  {used:0.1f}G/{total:0.1f}G ",
+    "tooltip": true,
+    "tooltip-format": "Memory usage: {used:0.2f}G/{total:0.2f}G"
+  },
+  "cpu": {
+    "format": "<span color='#8a8a8d'>  </span>  {usage}% ",
+    "tooltip": true
+  },
+  "clock": {
+    "interval": 1,
+    "timezone": "America/Los_Angeles",
+    "format": "<span color='#8a8a8d'>  </span>  {:%H:%M} ",
+    "tooltip": true,
+    "tooltip-format": "{:L%Y %m %d, %A}"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "<span color='#8a8a8d'>{icon}</span>  {percent}% ",
+    "tooltip": true,
+    "tooltip-format": "screen brightness: {percent}%",
+    "format-icons": [
+      "<span color='#8a8a8d'> 󰃞 </span>",
+      "<span color='#8a8a8d'> 󰃝 </span>",
+      "<span color='#8a8a8d'> 󰃟 </span>",
+      "<span color='#8a8a8d'> 󰃠 </span>"
+    ]
+  },
+  "reload_style_on_change": true
+}
