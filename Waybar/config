@@ -70,12 +70,12 @@
     "tooltip-format": "Shutdown: Ctrl + Shift +  + Esc"
   },
   "network": {
-    "format-wifi": "<span color='#8a8a8d'> 󰤨 </span>  {essid} ",
-    "format-ethernet": "<span color='#8a8a8d'> </span>  wired ",
-    "tooltip-format": "<span color='#c4a000'> 󰕒 </span>  {bandwidthUpBytes}  <span color='#00bb4b'> 󰇚 </span>  {bandwidthDownBytes}",
-    "format-linked": "<span color='#8a8a8d'> 󱘖 </span>  {ifname} (No IP) ",
-    "format-disconnected": "<span color='#b91c1c'>  </span>  disconnected ",
-    "format-alt": "<span color='#00bb4b'> 󰤨 </span>  {signalStrength}% ",
+    "format-wifi": "<span color='#8a8a8d'> 󰤨 </span> {essid} ",
+    "format-ethernet": "<span color='#8a8a8d'>  </span> wired ",
+    "tooltip-format": "<span color='#c4a000'> 󰕒 </span> {bandwidthUpBytes}  <span color='#00bb4b'> 󰇚</span> {bandwidthDownBytes}",
+    "format-linked": "<span color='#8a8a8d'> 󱘖 </span> {ifname} (No IP) ",
+    "format-disconnected": "<span color='#b91c1c'>  </span> disconnected ",
+    "format-alt": "<span color='#00bb4b'> 󰤨 </span> {signalStrength}% ",
     "interval": 1
   },
   "battery": {
@@ -83,7 +83,7 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "<span color='#8a8a8d'> {icon} </span>  {capacity}% ",
+    "format": "<span color='#8a8a8d'> {icon} </span> {capacity}% ",
     "format-charging": " 󱐋{capacity}%",
     "interval": 1,
     "format-icons": [
@@ -96,8 +96,8 @@
     "tooltip": true
   },
   "pulseaudio": {
-    "format": "<span color='#8a8a8d'>{icon}</span>  {volume}% ",
-    "format-muted": "<span color='#b91c1c'> 󰖁 </span>  0% ",
+    "format": "<span color='#8a8a8d'>{icon}</span> {volume}% ",
+    "format-muted": "<span color='#b91c1c'> 󰖁 </span> 0% ",
     "format-icons": {
       "headphone": "<span color='#8a8a8d'>  </span>",
       "hands-free": "<span color='#8a8a8d'>  </span>",
@@ -118,30 +118,30 @@
   },
   "custom/temperature": {
     "exec": "sensors | awk '/^Package id 0:/ {print int($4)}'",
-    "format": "<span color='#8a8a8d'> </span>  {}°C ",
+    "format": "<span color='#8a8a8d'> </span> {}°C ",
     "interval": 5,
     "tooltip": true,
     "tooltip-format": "CPU temperature: {}°C"
   },
   "memory": {
-    "format": "<span color='#8a8a8d'>  </span>  {used:0.1f}G/{total:0.1f}G ",
+    "format": "<span color='#8a8a8d'>  </span> {used:0.1f}G/{total:0.1f}G ",
     "tooltip": true,
     "tooltip-format": "Memory usage: {used:0.2f}G/{total:0.2f}G"
   },
   "cpu": {
-    "format": "<span color='#8a8a8d'>  </span>  {usage}% ",
+    "format": "<span color='#8a8a8d'>  </span> {usage}% ",
     "tooltip": true
   },
   "clock": {
     "interval": 1,
     "timezone": "America/Los_Angeles",
-    "format": "<span color='#8a8a8d'>  </span>  {:%H:%M} ",
+    "format": "<span color='#8a8a8d'>  </span> {:%H:%M} ",
     "tooltip": true,
     "tooltip-format": "{:L%Y %m %d, %A}"
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "<span color='#8a8a8d'>{icon}</span>  {percent}% ",
+    "format": "<span color='#8a8a8d'>{icon}</span> {percent}% ",
     "tooltip": true,
     "tooltip-format": "screen brightness: {percent}%",
     "format-icons": [

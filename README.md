@@ -1,3 +1,3 @@
-# Matte Black Theme for Omarchy
+# Matte Black theme for Omarchy
 
-This is a custom theme for Omarchy, designed to provide a sleek and modern matte black aesthetic.
+A custom dark theme for Omarchy, designed to be sleek and modern with a matte black aesthetic.
