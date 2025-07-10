@@ -17,11 +17,11 @@ return {
 					vim.api.nvim_set_hl(0, "SnacksDashboardFile", { fg = "#8a8a8d" }) 
 					vim.api.nvim_set_hl(0, "SnacksDashboardFooter", { fg = "#8a8a8d", italic = true })
 					vim.api.nvim_set_hl(0, "SnacksDashboardKey", { fg = "#ffffff", bold = true })
-					vim.api.nvim_set_hl(0, "SnacksDashboardDesc", { fg = "#ffffff" }) 
+					vim.api.nvim_set_hl(0, "SnacksDashboardDesc", { fg = "#ffffff" })
+					vim.api.nvim_set_hl(0, "SnacksDashboardSpecial", { fg = "#ffffff", bold = true })
+
 				end,
 			})
-			
-			-- Apply colors immediately
 			vim.schedule(function()
 				vim.cmd("doautocmd ColorScheme")
 			end)
