@@ -1,6 +1,6 @@
 # Matte Black theme for Omarchy
 
-A custom dark theme for Omarchy, designed to be sleek and modern with a matte black aesthetic.
+A custom dark theme for [Omarchy](https://omarchy.org/), designed to be sleek and modern with a matte black aesthetic.
 
 ![Omarchy Matte Black Theme](./images/matte-black-omarchy.webp)
 
@@ -20,3 +20,8 @@ To install the Omarchy Matte Black theme, follow these steps:
 ## Waybar
 
 Check out the [Waybar folder](./Waybar) for a custom setup that accompanies the Omarchy Matte Black theme.
+
+### Acknowledgments
+
+- [Omarchy](https://omarchy.org/) Opinionated Arch/Hyprland Setup By DHH
+- [Waybar](https://github.com/Alexays/Waybar) Highly customizable Wayland bar for Sway and Wlroots based compositors.
