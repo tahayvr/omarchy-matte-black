@@ -1,6 +1,6 @@
 # ────────────────────────────────────────────────────────────
-# Matte Black Theme for Alacritty
-# By noiseRandom
+# Omarchy Matte Black Theme for Alacritty
+# By tahayvr
 # https://github.com/tahayvr
 # ────────────────────────────────────────────────────────────
 
@@ -33,31 +33,21 @@ text = "CellForeground"
 background = "#333333" #charcoal
 
 [colors.normal]
-black = "#2c2c2c"
-red = "#b91c1c"
-green = "#8a8a8d"
+black = "#333333"
+red = "#D35F5F"
+green = "#FFC107"
 yellow = "#b91c1c"
 blue = "#e68e0d"
-magenta = "#b94d4d"
-cyan = "#8a8a8d"
+magenta = "#D35F5F"
+cyan = "#bebebe"
 white = "#bebebe"
 
 [colors.bright]
 black = "#8a8a8d"
-red = "#b90a0a"
-green = "#8a8a8d"
+red = "#B91C1C"
+green = "#FFC107"
 yellow = "#b90a0a"
 blue = "#f59e0b"
-magenta = "#b94d4d"
-cyan = "#333333"
-white = "#bebebe"
-
-[colors.dim]
-black = "#2c2c2c"
-red = "#800a0a"
-green = "#8a8a8d"
-yellow = "#800a0a"
-blue = "#b37308"
-magenta = "#b94d4d"
-cyan = "#333333"
-white = "#bebebe"
+magenta = "#B91C1C"
+cyan = "#eaeaea"
+white = "#ffffff"
