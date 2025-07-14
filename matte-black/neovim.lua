@@ -3,6 +3,7 @@ return {
   lazy = false,
   priority = 1000,
   dependencies = {
+    "folke/snacks.nvim",
     "nvim-tree/nvim-web-devicons",
     "nvim-lualine/lualine.nvim",
   },
