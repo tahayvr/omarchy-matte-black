@@ -15,7 +15,10 @@ To install the Omarchy Matte Black theme, follow these steps:
 1. Download the theme folder named ["matte-black"](./matte-black/) from the repository.
 2. Move the folder to your Omarchy themes directory at: `~/.config/omarchy/themes`
 3. Select the Matte Black theme by toggling themes using the hotkeys:
+
    - `Ctrl + Shift + Super + Space`
+
+note: You can also get the [background image](images/1-matte-black.jpg) from the repo and place it in a new folder named "matte-black" in `~/.config/omarchy/backgrounds` to use it as the background for the Matte Black theme.
 
 ## Waybar
 
