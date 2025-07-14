@@ -1,6 +1,9 @@
 # Configuration file for Ghostty.
+
 # Omarchy Matte Black theme
+
 # By tahayvr
+
 # https://github.com/tahayvr
 
 font-size = 14
@@ -30,12 +33,11 @@ palette = 15=#FFFFFF
 background = #121212
 foreground = #BEBEBE
 
-cursor-color = #121212
-cursor-text = #EAEAEA
+cursor-color = #EAEAEA
+cursor-text = #121212
 
 selection-background = #333333
 selection-foreground = #EAEAEA
-
 
 # Run `ghostty +show-config --default --docs` to view a list of
 
@@ -98,4 +100,3 @@ selection-foreground = #EAEAEA
 # # Just for example:
 
 # resize-overlay-duration = 4s 200ms
-
