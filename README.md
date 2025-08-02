@@ -10,7 +10,9 @@ A custom dark theme for [Omarchy](https://omarchy.org/), designed to be sleek an
 
 ## Installation
 
-To install the Omarchy Matte Black theme, follow these steps:
+The Matte Black theme is now an [official Omarchy theme](https://manuals.omamix.org/2/the-omarchy-manual/52/themes), so it is included in the Omarchy repository. But if you want to install any of the configs and styles manually, you can copy the contents of the config you need into your theme folder in `~/.config/omarchy/themes`.
+
+<!-- To install the Omarchy Matte Black theme, follow these steps:
 
 1. Download the theme folder named ["matte-black"](./matte-black/) from the repository.
 2. Move the folder to your Omarchy themes directory at: `~/.config/omarchy/themes`
@@ -18,7 +20,7 @@ To install the Omarchy Matte Black theme, follow these steps:
 
    - `Ctrl + Shift + Super + Space`
 
-note: You can also get the [background image](images/1-matte-black.jpg) from the repo and place it in a new folder named "matte-black" in `~/.config/omarchy/backgrounds` to use it as the background for the Matte Black theme.
+note: You can also get the [background image](images/1-matte-black.jpg) from the repo and place it in a new folder named "matte-black" in `~/.config/omarchy/backgrounds` to use it as the background for the Matte Black theme. -->
 
 ## Waybar
 
